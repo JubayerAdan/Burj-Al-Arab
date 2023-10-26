@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "hotelName": "Al-Sahara Palace",
+    "roomType": "Single",
+    "rent": 400,
+    "img": "https://hotelinteriordesigns.eu/wp-content/uploads/2021/04/Hospitality-Designs-from-Saudi-Arabia-Hotels-Taken-from-Arabian-Nights-1.1.jpg",
+    "description": "Experience the true essence of Arabian luxury at Al-Sahara Palace. Our Single rooms offer a perfect blend of comfort and elegance."
+  },
+  {
+    "id": 2,
+    "hotelName": "Golden Oasis Resort",
+    "roomType": "Double",
+    "rent": 600,
+    "img": "https://s.joinup.lt/uploads/hotel/37173/gallery/original/1-Arabian-Night-Suites-2.jpg",
+    "description": "Discover the tranquility of the Golden Oasis Resort with our spacious Double rooms, perfect for a relaxing stay."
+  },
+  {
+    "id": 3,
+    "hotelName": "Sultan's Suite",
+    "roomType": "Suite",
+    "rent": 1000,
+    "img": "https://sncdn.com/imagecache/db/id/943649/265471a.jpg",
+    "description": "Indulge in luxury with our Sultan's Suite. Enjoy spacious accommodations and exquisite amenities for an unforgettable stay."
+  },
+  {
+    "id": 4,
+    "hotelName": "Royal Desert Retreat",
+    "roomType": "Presidential Suite",
+    "rent": 2000,
+    "img": "https://www.arabiannightsresort.com/public/thumbs/home-gallery/1/Home-slider-91_590_1800.jpg",
+    "description": "Experience royalty at the Royal Desert Retreat in our Presidential Suite. Your ultimate Arabian escape awaits."
+  },
+  {
+    "id": 5,
+    "hotelName": "Arabian Nights Palace",
+    "roomType": "Royal Suite",
+    "rent": 5000,
+    "img": "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2021/04/18/2579461-25081055.png?itok=0oAjkW0G",
+    "description": "Step into the world of enchantment at the Arabian Nights Palace. Our Royal Suite offers unparalleled luxury and charm."
+  }
+]
