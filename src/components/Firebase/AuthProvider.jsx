@@ -10,6 +10,7 @@ import {
   GithubAuthProvider,
   GoogleAuthProvider,
   signInWithPopup,
+  FacebookAuthProvider,
 } from "firebase/auth";
 export const AuthContext = createContext(null);
 
@@ -17,6 +18,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const googleAuthProvider = new GoogleAuthProvider();
   const githubAuthProvider = new GithubAuthProvider();
+  const facebookAuthProvider = new FacebookAuthProvider();
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const createUser = async (email, password, name, imageLink) => {
@@ -50,6 +52,12 @@ const AuthProvider = ({ children }) => {
   const googleMethod = () => {
     return signInWithPopup(auth, googleAuthProvider);
   };
+  const githubMethod = () => {
+    return signInWithPopup(auth, githubAuthProvider);
+  };
+  const facebookMethod = () => {
+    return signInWithPopup(auth, facebookAuthProvider);
+  };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
@@ -69,6 +77,8 @@ const AuthProvider = ({ children }) => {
     signIn,
     logOut,
     googleMethod,
+    githubMethod,
+    facebookMethod,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

@@ -3,7 +3,8 @@ import { FaGoogle } from "react-icons/fa";
 import { Link, Navigate } from "react-router-dom";
 import { AuthContext } from "../Firebase/AuthProvider";
 const Login = () => {
-  const { signIn, user, googleMethod } = useContext(AuthContext);
+  const { signIn, user, googleMethod, githubMethod, facebookMethod } =
+    useContext(AuthContext);
   const [error, setError] = useState("");
 
   const handleSignIn = (e) => {
@@ -37,9 +38,15 @@ const Login = () => {
                 alt=""
               />
             </button>
-            <button className="r-icon-gihub">
+            <button onClick={githubMethod} className="r-icon-gihub">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                alt=""
+              />
+            </button>
+            <button onClick={facebookMethod} className="ms-2 r-icon-gihub">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/1200px-2023_Facebook_icon.svg.png"
                 alt=""
               />
             </button>
